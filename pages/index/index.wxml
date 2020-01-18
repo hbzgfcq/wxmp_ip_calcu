@@ -1,0 +1,18 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title">IP地址计算器</view>
+    <view class="page__desc">IP地址计算和IP地址规划</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-cells weui-cells_after-title">
+      <navigator url="../ipCalculate/ipCalculate" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">IP 地址计算</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+      <navigator url="../ipPlan/ipPlan" class="weui-cell weui-cell_access" hover-class="weui-cell_active">
+        <view class="weui-cell__bd">IP 地址规划</view>
+        <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+      </navigator>
+    </view>
+  </view>
+</view>

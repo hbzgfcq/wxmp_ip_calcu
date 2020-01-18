@@ -1,0 +1,85 @@
+<view class="page">
+  <view class="page__hd">
+    <view class="page__title"><text>IP 地址计算</text></view>
+    <view class="page__desc" style="color:red;">{{msg}}</view>
+  </view>
+  <view class="page__bd">
+    <view class="weui-cells weui-cells_after-title">
+      <view class="weui-cell ">
+        <view class="weui-cell__hd">
+          <view class="weui-label">IP地址</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="比如：1.2.3.6" bindinput="saveField" data-fn="ipAddress" focus="{{isFocus.ipAddress}}" />
+        </view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <view class="weui-label">子网掩码</view>
+        </view>
+        <view class="weui-cell__bd">
+          <input class="weui-input" placeholder="比如:255.255.0.0 或者 16" bindinput="saveField" data-fn="subnetMask" focus="{{isFocus.subnetMask}}" />
+        </view>
+      </view>
+      <view class="weui-cell">
+        <button class="weui-btn" type="primary" bindtap="ipCalculate" style="width:100%;">确 定</button>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <view class="weui-label">反掩码</view>
+        </view>
+        <view class="weui-cell__bd">
+          <text>{{wildcastMask}}</text>
+        </view>
+      </view>
+      <view class="weui-cell ">
+        <view class="weui-cell__hd">
+          <view class="weui-label">网络号</view>
+        </view>
+        <view class="weui-cell__bd">
+          <text>{{networkID}}</text>
+        </view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <view class="weui-label">主机号</view>
+        </view>
+        <view class="weui-cell__bd">
+          <text>{{hostID}}</text>
+        </view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <view class="weui-label">第一个IP</view>
+        </view>
+        <view class="weui-cell__bd">
+          <text>{{theFirstIP}}</text>
+        </view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <view class="weui-label">最后一个IP</view>
+        </view>
+        <view class="weui-cell__bd">
+          <text>{{theLastIP}}</text>
+        </view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <view class="weui-label">广播地址</view>
+        </view>
+        <view class="weui-cell__bd">
+          <text>{{theBoardcastAddress}}</text>
+        </view>
+      </view>
+      <view class="weui-cell">
+        <view class="weui-cell__hd">
+          <view class="weui-label">IP地址数</view>
+        </view>
+        <view class="weui-cell__bd">
+          <text>{{numOfIP}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
